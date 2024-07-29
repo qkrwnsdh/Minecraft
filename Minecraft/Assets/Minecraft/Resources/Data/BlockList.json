@@ -1,0 +1,60 @@
+{
+  "blockInfos": [
+    {
+      "id" : "Block_00",
+      "name": "Dirt",
+      "health": 20,
+      "drop" : "Item_Dirt",
+      "texture": "Dirt_Texture"
+    },
+    {
+      "id" : "Block_01",
+      "name": "Sand",
+      "health": 10,
+      "drop" : "Item_Send",
+      "texture": "Sand_Texture"
+    },
+    {
+      "id" : "Block_02",
+      "name": "Stone",
+      "health": 50,
+      "drop" : "Item_Stone",
+      "texture": "Stone_Texture"
+    },
+    {
+      "id" : "Block_03",
+      "name": "Iron",
+      "health": 100,
+      "drop" : "Item_Iron",
+      "texture": "Iron_Texture"
+    },
+    {
+      "id" : "Block_04",
+      "name": "Copper",
+      "health": 50,
+      "drop" : "Item_Copper",
+      "texture": "Copper_Texture"
+    },
+    {
+      "id" : "Block_05",
+      "name": "Wood",
+      "health": 30,
+      "drop" : "Item_Wood",
+      "texture": "Wood_Texture"
+    },
+    {
+      "id" : "Block_06",
+      "name": "Coal",
+      "health": 50,
+      "drop" : "Item_Coal",
+      "texture": "Coal_Texture"
+    },
+    {
+      "id" : "Block_07",
+      "name": "Gold",
+      "health": 70,
+      "drop" : "Item_Gold",
+      "texture": "Gold_Texture"
+    }
+  ]
+}

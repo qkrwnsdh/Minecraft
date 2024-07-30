@@ -139,10 +139,10 @@ TextureImporter:
       name: Window_Lobby_1
       rect:
         serializedVersion: 2
-        x: 331
-        y: 316
-        width: 275
-        height: 140
+        x: 329
+        y: 314
+        width: 279
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,32 +157,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Window_Lobby_0
+      name: Window_Lobby_2
       rect:
         serializedVersion: 2
         x: 610
         y: 395
-        width: 66
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35f0bc09875d63f499488b686caa0b49
-      internalID: -249786163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Window_Lobby_2
-      rect:
-        serializedVersion: 2
-        x: 611
-        y: 331
         width: 66
         height: 60
       alignment: 0
@@ -199,7 +178,49 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Window_Lobby_21
+      name: Window_Lobby_3
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 331
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf181fbaa85e47458629e3904ed0682
+      internalID: 133154856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_Lobby_4
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 190
+        width: 214
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af07707b0521b5438d28dbf4a159b10
+      internalID: -428295474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_Lobby_24
       rect:
         serializedVersion: 2
         x: 280
@@ -213,8 +234,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ede22fe0e076f9428e80e769a78fb06
-      internalID: 905984344
+      spriteID: cd6efb34f6013764abce5f286d599f3b
+      internalID: -2002285514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_Lobby_25
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 41
+        width: 92
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294f8624f8f35a443a1984299629db79
+      internalID: -658406316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_Lobby_26
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 41
+        width: 92
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff94fcb6c88cd7144acb423ed0bb40f8
+      internalID: 274239392
       vertices: []
       indices: 
       edges: []

@@ -674,7 +674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 43483292}
   m_Layer: 5
-  m_Name: Window_LogBox
+  m_Name: Window_Log
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1570,7 +1570,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 905984344, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: -2002285514, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2013,7 +2013,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 227097356}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonOption
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &227097356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2252,7 +2264,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 0
-  m_fontStyle: 1
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2963,7 +2975,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 310268720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonFind
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &310268720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3213,7 +3237,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 30, y: 30}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &350776162
 MonoBehaviour:
@@ -3234,7 +3258,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -3244,13 +3268,12 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_HighlightedSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
-    m_PressedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_PressedSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+    m_SelectedSprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
-    m_SelectedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
-      type: 3}
-    m_DisabledSprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_DisabledSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -3262,7 +3285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 350776163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonSetKeyForward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &350776163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3283,7 +3318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: 274239392, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3629,7 +3664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &397599384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3693,7 +3728,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 397599386}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonLogin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &397599386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4295,7 +4342,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 30, y: 30}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479939972
 MonoBehaviour:
@@ -4316,7 +4363,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -4326,13 +4373,12 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_HighlightedSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
-    m_PressedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_PressedSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+    m_SelectedSprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
-    m_SelectedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
-      type: 3}
-    m_DisabledSprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_DisabledSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -4344,7 +4390,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 479939973}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonSetKeyBackward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &479939973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4365,7 +4423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: 274239392, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4931,7 +4989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 905984344, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: -2002285514, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6135,7 +6193,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 0
-  m_fontStyle: 1
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6236,7 +6294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 905984344, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: -2002285514, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6583,7 +6641,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 781019099}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonConnectConfirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &781019099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6981,12 +7051,12 @@ GameObject:
   - component: {fileID: 814812379}
   - component: {fileID: 814812378}
   m_Layer: 5
-  m_Name: Board
+  m_Name: BackBoard_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &814812377
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6999,7 +7069,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 855266370}
+  m_Father: {fileID: 1331624977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7168,7 +7238,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 0
-  m_fontStyle: 1
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -7721,7 +7791,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 841679951}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonCreateConfirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &841679951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7935,43 +8017,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842535713}
   m_CullTransparentMesh: 1
---- !u!1 &855266369
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 855266370}
-  m_Layer: 5
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &855266370
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855266369}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1574083040}
-  - {fileID: 814812377}
-  m_Father: {fileID: 1331624977}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &861166571
 GameObject:
   m_ObjectHideFlags: 0
@@ -8355,7 +8400,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 909489917}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonLoginConfirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &909489917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9138,7 +9195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &968316939
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9585,7 +9642,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1018684741}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonSignUpConfirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1018684741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9816,7 +9885,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 905984344, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: -2002285514, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10043,7 +10112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1078589097
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10107,7 +10176,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1078589099}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonCreate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1078589099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10235,7 +10316,19 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SliderSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1090222720
 GameObject:
   m_ObjectHideFlags: 0
@@ -10515,7 +10608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1124898823
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10579,7 +10672,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1124898825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonSingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1124898825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11900,7 +12005,19 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SliderBGM
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1240694981
 GameObject:
   m_ObjectHideFlags: 0
@@ -12172,7 +12289,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1264433090}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonConnect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1264433090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12304,7 +12433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 905984344, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: -2002285514, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12415,7 +12544,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 905984344, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: -2002285514, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12596,9 +12725,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 855266370}
+  - {fileID: 1574083040}
   - {fileID: 1483559876}
   - {fileID: 80791341}
+  - {fileID: 814812377}
   - {fileID: 1754237445}
   m_Father: {fileID: 1679317538}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12924,6 +13054,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1348220649}
+  - component: {fileID: 1348220650}
+  - component: {fileID: 1348220651}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -12946,6 +13078,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 818704227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1348220650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348220648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c3cd8062eb35b49a276c67d4267f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winEl:
+    winLogin: {fileID: 579794022}
+    winSignUp: {fileID: 739729656}
+    winFind: {fileID: 968316938}
+    winOption: {fileID: 2065044611}
+    winCreate: {fileID: 52845093}
+    winConnect: {fileID: 678482866}
+    winLog: {fileID: 43483291}
+  btnEl:
+    btnLogin: {fileID: 397599385}
+    btnSingUp: {fileID: 1124898824}
+    btnFind: {fileID: 1366519287}
+    btnCreate: {fileID: 1078589098}
+    btnConnect: {fileID: 1537215321}
+    btnStore: {fileID: 1738021909}
+  fldEl:
+    fldLoginId: {fileID: 959738757}
+    fldLoginPassword: {fileID: 1476725555}
+    fldSignUpId: {fileID: 384836620}
+    fldSignUpPassword: {fileID: 905872822}
+    fldSignUpPasswordCheck: {fileID: 842535715}
+    fldSignUpEmail: {fileID: 17943407}
+    fldFindEmail: {fileID: 803973546}
+    fldCreateServerName: {fileID: 1761996826}
+    fldCreateAddress: {fileID: 1859429226}
+    fldConnectAddress: {fileID: 1555746996}
+  otherEl:
+    boardBlack: {fileID: 814812376}
+    findId: {fileID: 1691744706}
+    findPassword: {fileID: 2063248747}
+    log: {fileID: 827049933}
+  optionEl:
+    bgm: {fileID: 1237237629}
+    sfx: {fileID: 1083410508}
+    keyForward: {fileID: 350776160}
+    keyBackward: {fileID: 479939970}
+    keyRight: {fileID: 1441087488}
+    keyLeft: {fileID: 2066915481}
+--- !u!114 &1348220651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348220648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68df15336dbfef48a297247afe5b79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1355466493
 GameObject:
   m_ObjectHideFlags: 0
@@ -13028,7 +13222,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1355466496}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonOptionConfirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1355466496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13220,7 +13426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1366519286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13284,7 +13490,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1366519288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonFind
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1366519288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13604,7 +13822,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1409072874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonLogin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1409072874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13896,7 +14126,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1431301764}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonOption
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1431301764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13972,7 +14214,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 30, y: 30}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441087490
 MonoBehaviour:
@@ -13993,7 +14235,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -14003,13 +14245,12 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_HighlightedSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
-    m_PressedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_PressedSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+    m_SelectedSprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
-    m_SelectedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
-      type: 3}
-    m_DisabledSprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_DisabledSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -14021,7 +14262,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1441087491}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonSetKeyRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1441087491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14042,7 +14295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: 274239392, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14460,7 +14713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1537215320
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14524,7 +14777,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1537215322}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonConnect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1537215322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14864,7 +15129,7 @@ GameObject:
   - component: {fileID: 1574083042}
   - component: {fileID: 1574083041}
   m_Layer: 5
-  m_Name: Sprite
+  m_Name: BackBoard_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14882,7 +15147,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 855266370}
+  m_Father: {fileID: 1331624977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15745,6 +16010,7 @@ GameObject:
   - component: {fileID: 1691744710}
   - component: {fileID: 1691744709}
   - component: {fileID: 1691744708}
+  - component: {fileID: 1691744711}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -15770,7 +16036,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0000076293945, y: 0}
-  m_SizeDelta: {x: 150, y: 30}
+  m_SizeDelta: {x: 150, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691744708
 MonoBehaviour:
@@ -15791,9 +16057,9 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
-    m_NormalColor: {r: 0.75, g: 0.75, b: 0.75, a: 0.5019608}
+    m_NormalColor: {r: 0.75, g: 0.75, b: 0.75, a: 0}
     m_HighlightedColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
     m_PressedColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -15815,7 +16081,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1691744709}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonFindId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1691744709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15836,7 +16114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -338661063, guid: 7fd6dfde8de6258459a792cdbc93115c, type: 3}
+  m_Sprite: {fileID: 274239392, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15854,6 +16132,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691744706}
   m_CullTransparentMesh: 1
+--- !u!225 &1691744711
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691744706}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1696116661
 GameObject:
   m_ObjectHideFlags: 0
@@ -16011,7 +16301,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1701379738}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonCreate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1701379738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16132,7 +16434,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1706083013}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonSingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1706083013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16595,7 +16909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1738021908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16659,7 +16973,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1738021910}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonStore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1738021910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17133,7 +17459,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 0
-  m_fontStyle: 1
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -19659,7 +19985,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2016719892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2016719892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20280,6 +20618,7 @@ GameObject:
   - component: {fileID: 2063248751}
   - component: {fileID: 2063248750}
   - component: {fileID: 2063248749}
+  - component: {fileID: 2063248752}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -20305,7 +20644,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.0000076293945, y: 0}
-  m_SizeDelta: {x: 150, y: 30}
+  m_SizeDelta: {x: 150, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2063248749
 MonoBehaviour:
@@ -20326,7 +20665,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 0.75, g: 0.75, b: 0.75, a: 0.5019608}
     m_HighlightedColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -20350,7 +20689,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2063248750}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonFindPassword
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2063248750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20371,7 +20722,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -338661063, guid: 7fd6dfde8de6258459a792cdbc93115c, type: 3}
+  m_Sprite: {fileID: 274239392, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20389,6 +20740,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063248747}
   m_CullTransparentMesh: 1
+--- !u!225 &2063248752
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063248747}
+  m_Enabled: 1
+  m_Alpha: 0.8
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2065044611
 GameObject:
   m_ObjectHideFlags: 0
@@ -20465,7 +20828,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 30, y: 30}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066915483
 MonoBehaviour:
@@ -20486,7 +20849,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -20496,13 +20859,12 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_HighlightedSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
-    m_PressedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_PressedSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+    m_SelectedSprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
-    m_SelectedSprite: {fileID: -249786163, guid: 25eeeaa98844a064f8365feab3cea096,
-      type: 3}
-    m_DisabledSprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096,
+    m_DisabledSprite: {fileID: 133154856, guid: 25eeeaa98844a064f8365feab3cea096,
       type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -20514,7 +20876,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2066915484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonSetKeyLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2066915484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20535,7 +20909,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2062044696, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: 274239392, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20635,7 +21009,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2073297716}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonLog
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2073297716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20731,7 +21117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 905984344, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
+  m_Sprite: {fileID: -2002285514, guid: 25eeeaa98844a064f8365feab3cea096, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21075,7 +21461,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2139960344}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonFindConfirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2139960344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21239,7 +21637,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2143653652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonCheckConfirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2143653652
 MonoBehaviour:
   m_ObjectHideFlags: 0

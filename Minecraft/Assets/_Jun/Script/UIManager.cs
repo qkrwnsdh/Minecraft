@@ -118,7 +118,7 @@ public class UIManager : MonoBehaviour
         findId.alpha = ENABLE_VALUE;
         findPassword.alpha = DISABLE_VALUE;
 
-        textElement.textFind.text = "Email";
+        textElement.textFind.text = "이메일";
 
         findType = "ID";
     }
@@ -267,7 +267,7 @@ public class UIManager : MonoBehaviour
         findId.alpha = ENABLE_VALUE;
         findPassword.alpha = DISABLE_VALUE;
 
-        textElement.textFind.text = "Email";
+        textElement.textFind.text = "이메일";
 
         findType = "ID";
     }
@@ -279,7 +279,7 @@ public class UIManager : MonoBehaviour
         findId.alpha = DISABLE_VALUE;
         findPassword.alpha = ENABLE_VALUE;
 
-        textElement.textFind.text = "ID";
+        textElement.textFind.text = "아이디";
 
         findType = "PASSWORD";
     }

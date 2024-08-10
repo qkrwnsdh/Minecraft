@@ -60,15 +60,7 @@ public class APIManager : MonoBehaviour
 
         yield return request.SendWebRequest();
 
-        if (request.result == UnityWebRequest.Result.Success)
-        {
-            log.text = $"{api} successful!";
-        }
-        else
-        {
-            log.text = $"{api} failed: " + request.error;
-            Debug.Log($"{api} failed: " + request.error);
-        }
+        log.text = GetResponseLog(api, (int)request.responseCode);
     }
 
     public IEnumerator AccountJoin(TextMeshProUGUI log, string username, string password, string email)
@@ -113,6 +105,79 @@ public class APIManager : MonoBehaviour
         return SendRequest(API.ACCOUNT_EMAIL_CHECK, log, accountEmailCheck);
     }
     #endregion
+
+    private string GetResponseLog(API api, int responseCode)
+    {
+        Dictionary<int, string> responseMessages = GetApiResponseMessages(api);
+        if (responseMessages.TryGetValue(responseCode, out string message))
+        {
+            return message;
+        }
+
+        return "알 수 없는 응답 코드입니다.";
+    }
+
+    private Dictionary<int, string> GetApiResponseMessages(API api)
+    {
+        switch (api)
+        {
+            case API.ACCOUNT_JOIN:
+                return new Dictionary<int, string>
+            {
+                { 200, "회원가입 하셨습니다." },
+                { 400, "정보를 확인해 주십시오." }
+            };
+
+            case API.LOGIN:
+                return new Dictionary<int, string>
+            {
+                { 200, "로그인 하셨습니다." },
+                { 401, "정보를 확인해 주십시오." }
+            };
+
+            case API.ACCOUNT_FIND_PASSWORD:
+                return new Dictionary<int, string>
+            {
+                { 200, "이메일로 임시 비밀번호를 보냈습니다." },
+                { 400, "정보를 확인해 주십시오." }
+            };
+
+            case API.ACCOUNT_FIND_USERNAME:
+                return new Dictionary<int, string>
+            {
+                { 200, "아이디 찾기를 하셨습니다." },
+                { 400, "정보를 확인해 주십시오." }
+            };
+
+            case API.ACCOUNT_SET_PASSWORD:
+                return new Dictionary<int, string>
+            {
+                { 200, "비밀번호가 재설정 되셨습니다." },
+                { 400, "정보를 확인해 주십시오." },
+                { 403, "권한이 없습니다." }
+            };
+
+            case API.ACCOUNT_USERNAME_CHECK:
+                return new Dictionary<int, string>
+            {
+                { 200, "사용가능한 아이디 입니다." },
+                { 400, "이미 존재하는 아이디 입니다." }
+            };
+
+            case API.ACCOUNT_EMAIL_CHECK:
+                return new Dictionary<int, string>
+            {
+                { 200, "사용가능한 이메일 입니다." },
+                { 400, "이미 존재하는 이메일 입니다." }
+            };
+
+            default:
+                return new Dictionary<int, string>
+            {
+                { 0, "알 수 없는 오류가 발생했습니다." }
+            };
+        }
+    }
 }
 
 [Serializable]

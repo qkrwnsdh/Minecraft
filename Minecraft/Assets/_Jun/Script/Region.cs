@@ -9,7 +9,7 @@ public class Region
     public BlockState[,,] regionBlockStates { get; private set; }
 
     private GameObject regionObj;
-    private Vector3 regionPos;
+    public Vector3 regionPos { get; private set; }
     private IRegionTypeCommand command;
 
     public Region(Vector3 regionPos, Transform regionPaent)

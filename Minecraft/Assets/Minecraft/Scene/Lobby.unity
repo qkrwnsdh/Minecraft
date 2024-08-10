@@ -2978,7 +2978,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonFind
+        m_MethodName: ButtonCancleFind
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3288,7 +3288,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonSetKeyForward
+        m_MethodName: SetForwardKey
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4393,7 +4393,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonSetKeyBackward
+        m_MethodName: SetBackwardKey
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6644,7 +6644,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonConnectConfirm
+        m_MethodName: ButtonConfirmConnect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7794,7 +7794,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonCreateConfirm
+        m_MethodName: ButtonConfirmCreate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8136,6 +8136,7 @@ RectTransform:
   - {fileID: 2094786655}
   - {fileID: 1609733829}
   - {fileID: 468801904}
+  - {fileID: 1752668188}
   m_Father: {fileID: 739729657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8318,6 +8319,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905872820}
   m_CullTransparentMesh: 1
+--- !u!1 &908303941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908303942}
+  - component: {fileID: 908303944}
+  - component: {fileID: 908303943}
+  - component: {fileID: 908303945}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &908303942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908303941}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1295917394}
+  m_Father: {fileID: 1752668188}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 90, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &908303943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908303941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -338661063, guid: 7fd6dfde8de6258459a792cdbc93115c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &908303944
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908303941}
+  m_CullTransparentMesh: 1
+--- !u!114 &908303945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908303941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    m_PressedColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.75, g: 0.75, b: 0.75, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 908303943}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348220650}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonEmailCheck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &909489914
 GameObject:
   m_ObjectHideFlags: 0
@@ -8403,7 +8537,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonLoginConfirm
+        m_MethodName: ButtonConfirmLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9645,7 +9779,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonSignUpConfirm
+        m_MethodName: ButtonConfirmSignUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12292,7 +12426,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonConnect
+        m_MethodName: ButtonCancleConnect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12487,6 +12621,141 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 100, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1295917393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295917394}
+  - component: {fileID: 1295917396}
+  - component: {fileID: 1295917395}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1295917394
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295917393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 908303942}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1295917395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295917393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Check
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7139621cd5db1f845a9e2487fbb8fa6a, type: 2}
+  m_sharedMaterial: {fileID: 6881832585047945381, guid: 7139621cd5db1f845a9e2487fbb8fa6a,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 97690656
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: -15
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1295917396
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295917393}
+  m_CullTransparentMesh: 1
 --- !u!1 &1303800191
 GameObject:
   m_ObjectHideFlags: 0
@@ -13056,6 +13325,7 @@ GameObject:
   - component: {fileID: 1348220649}
   - component: {fileID: 1348220650}
   - component: {fileID: 1348220651}
+  - component: {fileID: 1348220652}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -13090,44 +13360,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c3cd8062eb35b49a276c67d4267f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winEl:
-    winLogin: {fileID: 579794022}
-    winSignUp: {fileID: 739729656}
-    winFind: {fileID: 968316938}
-    winOption: {fileID: 2065044611}
-    winCreate: {fileID: 52845093}
-    winConnect: {fileID: 678482866}
-    winLog: {fileID: 43483291}
-  btnEl:
-    btnLogin: {fileID: 397599385}
-    btnSingUp: {fileID: 1124898824}
-    btnFind: {fileID: 1366519287}
-    btnCreate: {fileID: 1078589098}
-    btnConnect: {fileID: 1537215321}
-    btnStore: {fileID: 1738021909}
-  fldEl:
-    fldLoginId: {fileID: 959738757}
-    fldLoginPassword: {fileID: 1476725555}
-    fldSignUpId: {fileID: 384836620}
-    fldSignUpPassword: {fileID: 905872822}
-    fldSignUpPasswordCheck: {fileID: 842535715}
-    fldSignUpEmail: {fileID: 17943407}
-    fldFindEmail: {fileID: 803973546}
-    fldCreateServerName: {fileID: 1761996826}
-    fldCreateAddress: {fileID: 1859429226}
-    fldConnectAddress: {fileID: 1555746996}
-  otherEl:
-    boardBlack: {fileID: 814812376}
-    findId: {fileID: 1691744706}
-    findPassword: {fileID: 2063248747}
-    log: {fileID: 827049933}
-  optionEl:
-    bgm: {fileID: 1237237629}
-    sfx: {fileID: 1083410508}
-    keyForward: {fileID: 350776160}
-    keyBackward: {fileID: 479939970}
-    keyRight: {fileID: 1441087488}
-    keyLeft: {fileID: 2066915481}
+  windowElement:
+    windowBlack: {fileID: 814812376}
+    windowLogin: {fileID: 579794022}
+    windowSignUp: {fileID: 739729656}
+    windowFind: {fileID: 968316938}
+    windowOption: {fileID: 2065044611}
+    windowCreate: {fileID: 52845093}
+    windowConnect: {fileID: 678482866}
+    windowLog: {fileID: 43483291}
+  buttonElement:
+    buttonLoginConfirm: {fileID: 909489916}
+    buttonSingUpConfirm: {fileID: 1018684740}
+    buttonSignUpIdCheck: {fileID: 2143653651}
+    buttonSignUpEmailCheck: {fileID: 908303945}
+    buttonFindConfirm: {fileID: 2139960343}
+    buttonFindId: {fileID: 1691744708}
+    buttonFindPassword: {fileID: 2063248749}
+    buttonOptionConfirm: {fileID: 1355466495}
+    buttonCreateConfirm: {fileID: 841679950}
+    buttonConnectConfirm: {fileID: 781019098}
+    buttonStore: {fileID: 1738021909}
+  inputElement:
+    inputLoginId: {fileID: 959738757}
+    inputLoginPassword: {fileID: 1476725555}
+    inputSignUpId: {fileID: 384836620}
+    inputSignUpPassword: {fileID: 905872822}
+    inputSignUpPasswordCheck: {fileID: 842535715}
+    inputSignUpEmail: {fileID: 17943407}
+    inputFindIdEmail: {fileID: 803973546}
+    inputFindPasswordId: {fileID: 803973546}
+    inputCreateServerName: {fileID: 1761996826}
+    inputCreateAddress: {fileID: 1859429226}
+    inputConnectAddress: {fileID: 1555746996}
+  textElement:
+    textFind: {fileID: 2096320068}
+    textLog: {fileID: 827049933}
+    textForward: {fileID: 818742274}
+    textBackward: {fileID: 260399251}
+    textRight: {fileID: 713498964}
+    textLeft: {fileID: 1779610093}
+  sliderElement:
+    sliderBgm: {fileID: 1237237631}
+    sliderSfx: {fileID: 1083410510}
 --- !u!114 &1348220651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13138,6 +13413,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d68df15336dbfef48a297247afe5b79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1348220652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348220648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da8e97cda60aab44915e65604295daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1355466493
@@ -13225,7 +13512,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonOptionConfirm
+        m_MethodName: ButtonConfirmOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13825,7 +14112,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonLogin
+        m_MethodName: ButtonCancleLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14129,7 +14416,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonOption
+        m_MethodName: ButtonCancleOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14265,7 +14552,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonSetKeyRight
+        m_MethodName: SetRightKey
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16084,7 +16371,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonFindId
+        m_MethodName: ButtonSelectId
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16304,7 +16591,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonCreate
+        m_MethodName: ButtonCancleCreate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16437,7 +16724,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonSingUp
+        m_MethodName: ButtonCancleSignUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17099,6 +17386,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742739049}
   m_CullTransparentMesh: 1
+--- !u!1 &1752668187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1752668188}
+  m_Layer: 5
+  m_Name: Button_Email_Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1752668188
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752668187}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 908303942}
+  m_Father: {fileID: 901566224}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -70, y: -220}
+  m_SizeDelta: {x: 140, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1754237444
 GameObject:
   m_ObjectHideFlags: 0
@@ -20692,7 +21015,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonFindPassword
+        m_MethodName: ButtonSelectPassword
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20879,7 +21202,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonSetKeyLeft
+        m_MethodName: SetLeftKey
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21012,7 +21335,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonLog
+        m_MethodName: ButtonCancleLog
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21145,7 +21468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2094786655}
   m_Layer: 5
-  m_Name: Button_Check
+  m_Name: Button_Id_Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21464,7 +21787,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonFindConfirm
+        m_MethodName: ButtonConfirmFind
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21640,7 +21963,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1348220650}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ButtonCheckConfirm
+        m_MethodName: ButtonIdCheck
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -4,18 +4,17 @@ using UnityEngine;
 
 public interface IRegionTypeCommand
 {
-    public BlockState[,,] Execute(Region region, int dim);
+    public Block[,,] Execute(Region region);
 }
 
 public class StoneCommand : IRegionTypeCommand
 {
-    private BlockState[,,] regionBlockStates = new BlockState[100, 100, 100];
-    private Region region;
+    private readonly int dim = Define.REGION_IN_BLOCK_DIM;
+    private Block[,,] regionBlocks;
 
-    public BlockState[,,] Execute(Region region, int dim)
+    public Block[,,] Execute(Region region)
     {
-        this.region = region;
-        regionBlockStates = new BlockState[dim, dim, dim];
+        regionBlocks = new Block[dim, dim, dim];
 
         for (int x = 0; x < dim; x++)
         {
@@ -23,40 +22,43 @@ public class StoneCommand : IRegionTypeCommand
             {
                 for (int z = 0; z < dim; z++)
                 {
-                    Vector3 pos = new Vector3(x, y, z);
+                    Vector3 position = new Vector3(x, y, z);
+                    GameObject block = Object.Instantiate(
+                        Resources.Load<GameObject>(Define.PATH_BLOCK_PREFAB),
+                        position + region.regionPosition,
+                        Quaternion.identity,
+                        region.regionObject.transform);
 
-                    regionBlockStates[x, y, z] = new BlockState("Block_01", pos);
+                    regionBlocks[x, y, z] = block.GetComponent<Block>();
+                    regionBlocks[x, y, z].Initialization("Block_02",block.transform.position);
                 }
             }
         }
 
-        return regionBlockStates;
+        return regionBlocks;
     }
 }
 
 public abstract class GroundBaseCommand : IRegionTypeCommand
 {
-    protected BlockState[,,] _regionBlockStates;
-    protected Region _region;
-    protected readonly int MAX_ADD_SMOOTH = 5;
-    protected readonly int MIN_ADD_SMOOTH = 3;
+    protected readonly int dim = Define.REGION_IN_BLOCK_DIM;
+    protected Block[,,] regionBlocks;
 
-    public BlockState[,,] Execute(Region region, int dim)
+    public Block[,,] Execute(Region region)
     {
-        _regionBlockStates = new BlockState[dim, dim, dim];
-        _region = region;
+        regionBlocks = new Block[dim, dim, dim];
 
-        GenerateBlocks(dim);
-        return _regionBlockStates;
+        GenerateBlocks(region);
+
+        return regionBlocks;
     }
 
-    protected abstract void GenerateBlocks(int dim);
-    protected abstract string SetBlockId(int x, int y, int z, int height, int smooth);
+    protected abstract void GenerateBlocks(Region region);
 }
 
 public class DesertCommand : GroundBaseCommand
 {
-    protected override void GenerateBlocks(int dim)
+    protected override void GenerateBlocks(Region region)
     {
         for (int x = 0; x < dim; x++)
         {
@@ -65,20 +67,27 @@ public class DesertCommand : GroundBaseCommand
                 float xPos = (float)x / dim * Define.BIOME_DESERT_VIORATION;
                 float zPos = (float)z / dim * Define.BIOME_DESERT_VIORATION;
 
-                int height = (int)(Mathf.PerlinNoise(xPos, zPos) * Define.BIOME_DESERT_AMPLITUDE + MAX_ADD_SMOOTH);
-                int smooth = Random.Range(MIN_ADD_SMOOTH, MAX_ADD_SMOOTH);
+                int height = (int)(Mathf.PerlinNoise(xPos, zPos) * Define.BIOME_DESERT_AMPLITUDE + Define.BIOME_SMOOTH_MAX);
+                int smooth = Random.Range(Define.BIOME_SMOOTH_MIN, Define.BIOME_SMOOTH_MAX);
 
                 for (int y = 0; y <= height; y++)
                 {
-                    Vector3 pos = new Vector3(x, y, z);
+                    Vector3 position = new Vector3(x, y, z);
                     string blockId = SetBlockId(x, y, z, height, smooth);
-                    _regionBlockStates[x, y, z] = new BlockState(blockId, pos);
+                    GameObject block = Object.Instantiate(
+                        Resources.Load<GameObject>(Define.PATH_BLOCK_PREFAB),
+                        position + region.regionPosition,
+                        Quaternion.identity,
+                        region.regionObject.transform);
+
+                    regionBlocks[x, y, z] = block.GetComponent<Block>();
+                    regionBlocks[x, y, z].Initialization(blockId, block.transform.position);
                 }
             }
         }
     }
 
-    protected override string SetBlockId(int x, int y, int z, int height, int smooth)
+    private string SetBlockId(int x, int y, int z, int height, int smooth)
     {
         string blockType = y <= height && height - smooth < y ? "Block_01" : "Block_02";
 
@@ -88,7 +97,7 @@ public class DesertCommand : GroundBaseCommand
 
 public class OceanCommand : GroundBaseCommand
 {
-    protected override void GenerateBlocks(int dim)
+    protected override void GenerateBlocks(Region region)
     {
         for (int x = 0; x < dim; x++)
         {
@@ -97,20 +106,27 @@ public class OceanCommand : GroundBaseCommand
                 float xPos = (float)x / dim * Define.BIOME_OCEAN_VIORATION;
                 float zPos = (float)z / dim * Define.BIOME_OCEAN_VIORATION;
 
-                int height = (int)(Mathf.PerlinNoise(xPos, zPos) * Define.BIOME_OCEAN_AMPLITUDE + MAX_ADD_SMOOTH);
-                int smooth = Random.Range(MIN_ADD_SMOOTH, MAX_ADD_SMOOTH);
+                int height = (int)(Mathf.PerlinNoise(xPos, zPos) * Define.BIOME_OCEAN_AMPLITUDE + Define.BIOME_SMOOTH_MAX);
+                int smooth = Random.Range(Define.BIOME_SMOOTH_MIN, Define.BIOME_SMOOTH_MAX);
 
                 for (int y = 0; y <= height; y++)
                 {
-                    Vector3 pos = new Vector3(x, y, z);
+                    Vector3 position = new Vector3(x, y, z);
                     string blockId = SetBlockId(x, y, z, height, smooth);
-                    _regionBlockStates[x, y, z] = new BlockState(blockId, pos);
+                    GameObject block = Object.Instantiate(
+                        Resources.Load<GameObject>(Define.PATH_BLOCK_PREFAB),
+                        position + region.regionPosition,
+                        Quaternion.identity,
+                        region.regionObject.transform);
+
+                    regionBlocks[x, y, z] = block.GetComponent<Block>();
+                    regionBlocks[x, y, z].Initialization(blockId, block.transform.position);
                 }
             }
         }
     }
 
-    protected override string SetBlockId(int x, int y, int z, int height, int smooth)
+    private string SetBlockId(int x, int y, int z, int height, int smooth)
     {
         string blockType = y <= height && height - smooth < y ? "Block_01" : "Block_02";
 
@@ -120,7 +136,7 @@ public class OceanCommand : GroundBaseCommand
 
 public class VeldCommand : GroundBaseCommand
 {
-    protected override void GenerateBlocks(int dim)
+    protected override void GenerateBlocks(Region region)
     {
         for (int x = 0; x < dim; x++)
         {
@@ -129,20 +145,27 @@ public class VeldCommand : GroundBaseCommand
                 float xPos = (float)x / dim * Define.BIOME_VELD_VIORATION;
                 float zPos = (float)z / dim * Define.BIOME_VELD_VIORATION;
 
-                int height = (int)(Mathf.PerlinNoise(xPos, zPos) * Define.BIOME_VELD_AMPLITUDE + MAX_ADD_SMOOTH);
-                int smooth = Random.Range(MIN_ADD_SMOOTH, MAX_ADD_SMOOTH);
+                int height = (int)(Mathf.PerlinNoise(xPos, zPos) * Define.BIOME_VELD_AMPLITUDE + Define.BIOME_SMOOTH_MAX);
+                int smooth = Random.Range(Define.BIOME_SMOOTH_MIN, Define.BIOME_SMOOTH_MAX);
 
                 for (int y = 0; y <= height; y++)
                 {
-                    Vector3 pos = new Vector3(x, y, z);
+                    Vector3 position = new Vector3(x, y, z);
                     string blockId = SetBlockId(x, y, z, height, smooth);
-                    _regionBlockStates[x, y, z] = new BlockState(blockId, pos);
+                    GameObject block = Object.Instantiate(
+                        Resources.Load<GameObject>(Define.PATH_BLOCK_PREFAB),
+                        position + region.regionPosition,
+                        Quaternion.identity,
+                        region.regionObject.transform);
+
+                    regionBlocks[x, y, z] = block.GetComponent<Block>();
+                    regionBlocks[x, y, z].Initialization(blockId, block.transform.position);
                 }
             }
         }
     }
 
-    protected override string SetBlockId(int x, int y, int z, int height, int smooth)
+    private string SetBlockId(int x, int y, int z, int height, int smooth)
     {
         string blockType = y <= height && height - smooth < y ? "Block_01" : "Block_02";
 

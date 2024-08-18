@@ -1,28 +1,8 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-
-[System.Serializable]
-public class MapDTO
-{
-    public List<RegionDTO> regions = new List<RegionDTO>();
-}
-
-[System.Serializable]
-public class RegionDTO
-{
-    public string regionType;
-    public Vector3 regionPos;
-    public List<BlockDTO> blocks = new List<BlockDTO>();
-}
-
-[System.Serializable]
-public class BlockDTO
-{
-    public string blockId;
-    public Vector3 blockPos;
-    public bool isVis;
-}
+using System;
+using Unity.Mathematics;
 
 public class MapGenerator : MonoBehaviour
 {
@@ -44,7 +24,7 @@ public class MapGenerator : MonoBehaviour
         InitializationInstances();
         GeneratorRegions();
 
-        SaveMapToJson("mapData.json");
+        //SaveMapToJson("mapData.json");
     }
 
     private void InitializationInstances()
@@ -53,6 +33,14 @@ public class MapGenerator : MonoBehaviour
     }
 
     private void GeneratorRegions()
+    {
+        RegionAction((region, x, y, z) => { regions[x, y, z] = new Region(new Vector3(x, y, z), regionParent); });
+        RegionAction((region, x, y, z) => { regions[x, y, z].GeneratorBlocksData(); });
+        RegionAction((region, x, y, z) => { regions[x, y, z].BlockAdjacents(); });
+        RegionAction((region, x, y, z) => { regions[x, y, z].BlockVisibles(); });
+    }
+
+    private void RegionAction(Action<Region, int, int, int> action)
     {
         int xLength = regions.GetLength(0);
         int yLength = regions.GetLength(1);
@@ -64,29 +52,7 @@ public class MapGenerator : MonoBehaviour
             {
                 for (int z = 0; z < zLength; z++)
                 {
-                    regions[x, y, z] = new Region(new Vector3(x, y, z), regionParent);
-                }
-            }
-        }
-
-        for (int x = 0; x < xLength; x++)
-        {
-            for (int y = 0; y < yLength; y++)
-            {
-                for (int z = 0; z < zLength; z++)
-                {
-                    regions[x, y, z].GeneratorBlocksData();
-                }
-            }
-        }
-
-        for (int x = 0; x < xLength; x++)
-        {
-            for (int y = 0; y < yLength; y++)
-            {
-                for (int z = 0; z < zLength; z++)
-                {
-                    regions[x, y, z].GeneratorBlocks();
+                    action(regions[x, y, z], x, y, z);
                 }
             }
         }
@@ -121,11 +87,11 @@ public class MapGenerator : MonoBehaviour
                     Region region = regions[x, y, z];
                     RegionDTO regionDTO = new RegionDTO();
                     regionDTO.regionType = region.regionType;
-                    regionDTO.regionPos = region.regionPos;
+                    regionDTO.regionPosition = region.regionPosition;
 
-                    int blockXLength = region.regionBlockStates.GetLength(0);
-                    int blockYLength = region.regionBlockStates.GetLength(1);
-                    int blockZLength = region.regionBlockStates.GetLength(2);
+                    int blockXLength = region.regionBlocks.GetLength(0);
+                    int blockYLength = region.regionBlocks.GetLength(1);
+                    int blockZLength = region.regionBlocks.GetLength(2);
 
                     for (int bx = 0; bx < blockXLength; bx++)
                     {
@@ -133,13 +99,13 @@ public class MapGenerator : MonoBehaviour
                         {
                             for (int bz = 0; bz < blockZLength; bz++)
                             {
-                                BlockState blockState = region.regionBlockStates[bx, by, bz];
+                                Block blockState = region.regionBlocks[bx, by, bz];
                                 if (blockState != null)
                                 {
                                     BlockDTO blockDTO = new BlockDTO();
                                     blockDTO.blockId = blockState.blockId;
-                                    blockDTO.blockPos = blockState.blockPos;
-                                    blockDTO.isVis = blockState.isVis;
+                                    blockDTO.blockPosition = blockState.blockPosition;
+                                    blockDTO.blockVisible = blockState.blockVisible;
 
                                     regionDTO.blocks.Add(blockDTO);
                                 }

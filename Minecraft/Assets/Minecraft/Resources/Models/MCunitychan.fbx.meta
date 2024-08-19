@@ -1,0 +1,606 @@
+fileFormatVersion: 2
+guid: fa5dcd72fcc122042b2b1b852b967d76
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: arm_L
+  - first:
+      1: 100002
+    second: arm_R
+  - first:
+      1: 100004
+    second: body
+  - first:
+      1: 100006
+    second: CH_Chest
+  - first:
+      1: 100008
+    second: CH_Foot_L
+  - first:
+      1: 100010
+    second: CH_Foot_R
+  - first:
+      1: 100012
+    second: CH_For_L
+  - first:
+      1: 100014
+    second: CH_For_R
+  - first:
+      1: 100016
+    second: CH_Hand_L
+  - first:
+      1: 100018
+    second: CH_Hand_R
+  - first:
+      1: 100020
+    second: CH_Head
+  - first:
+      1: 100022
+    second: CH_Hips
+  - first:
+      1: 100024
+    second: CH_Neck
+  - first:
+      1: 100026
+    second: CH_Shin_L
+  - first:
+      1: 100028
+    second: CH_Shin_R
+  - first:
+      1: 100030
+    second: CH_Shou_L
+  - first:
+      1: 100032
+    second: CH_Shou_R
+  - first:
+      1: 100034
+    second: CH_Spine
+  - first:
+      1: 100036
+    second: CH_Thigh_L
+  - first:
+      1: 100038
+    second: CH_Thigh_R
+  - first:
+      1: 100040
+    second: CH_Toe_L
+  - first:
+      1: 100042
+    second: CH_Toe_R
+  - first:
+      1: 100044
+    second: CH_Uppe_L
+  - first:
+      1: 100046
+    second: CH_Uppe_R
+  - first:
+      1: 100048
+    second: Character1_Reference
+  - first:
+      1: 100050
+    second: head
+  - first:
+      1: 100052
+    second: Leg_L
+  - first:
+      1: 100054
+    second: leg_R
+  - first:
+      1: 100056
+    second: //RootNode
+  - first:
+      4: 400000
+    second: arm_L
+  - first:
+      4: 400002
+    second: arm_R
+  - first:
+      4: 400004
+    second: body
+  - first:
+      4: 400006
+    second: CH_Chest
+  - first:
+      4: 400008
+    second: CH_Foot_L
+  - first:
+      4: 400010
+    second: CH_Foot_R
+  - first:
+      4: 400012
+    second: CH_For_L
+  - first:
+      4: 400014
+    second: CH_For_R
+  - first:
+      4: 400016
+    second: CH_Hand_L
+  - first:
+      4: 400018
+    second: CH_Hand_R
+  - first:
+      4: 400020
+    second: CH_Head
+  - first:
+      4: 400022
+    second: CH_Hips
+  - first:
+      4: 400024
+    second: CH_Neck
+  - first:
+      4: 400026
+    second: CH_Shin_L
+  - first:
+      4: 400028
+    second: CH_Shin_R
+  - first:
+      4: 400030
+    second: CH_Shou_L
+  - first:
+      4: 400032
+    second: CH_Shou_R
+  - first:
+      4: 400034
+    second: CH_Spine
+  - first:
+      4: 400036
+    second: CH_Thigh_L
+  - first:
+      4: 400038
+    second: CH_Thigh_R
+  - first:
+      4: 400040
+    second: CH_Toe_L
+  - first:
+      4: 400042
+    second: CH_Toe_R
+  - first:
+      4: 400044
+    second: CH_Uppe_L
+  - first:
+      4: 400046
+    second: CH_Uppe_R
+  - first:
+      4: 400048
+    second: Character1_Reference
+  - first:
+      4: 400050
+    second: head
+  - first:
+      4: 400052
+    second: Leg_L
+  - first:
+      4: 400054
+    second: leg_R
+  - first:
+      4: 400056
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: head
+  - first:
+      43: 4300002
+    second: arm_L
+  - first:
+      43: 4300004
+    second: arm_R
+  - first:
+      43: 4300006
+    second: body
+  - first:
+      43: 4300008
+    second: Leg_L
+  - first:
+      43: 4300010
+    second: leg_R
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: arm_L
+  - first:
+      137: 13700002
+    second: arm_R
+  - first:
+      137: 13700004
+    second: body
+  - first:
+      137: 13700006
+    second: head
+  - first:
+      137: 13700008
+    second: Leg_L
+  - first:
+      137: 13700010
+    second: leg_R
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: CH_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Thigh_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: -60, y: -60, z: -90}
+        max: {x: 60, y: 60, z: 50}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Thigh_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: -60, y: -60, z: -90}
+        max: {x: 60, y: 60, z: 50}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Shin_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Shin_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Foot_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: -30, z: -50}
+        max: {x: 0, y: 30, z: 50}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Foot_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: -30, z: -50}
+        max: {x: 0, y: 30, z: 50}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Spine
+      humanName: Spine
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Neck
+      humanName: Neck
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Head
+      humanName: Head
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Uppe_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Uppe_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_For_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_For_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Hand_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Hand_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CH_Chest
+      humanName: Chest
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: MCunitychan(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: arm_L
+      parentName: MCunitychan(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: arm_R
+      parentName: MCunitychan(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body
+      parentName: MCunitychan(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Reference
+      parentName: MCunitychan(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Hips
+      parentName: Character1_Reference
+      position: {x: 0.00007873546, y: 0.6373679, z: -0.0023557246}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Spine
+      parentName: CH_Hips
+      position: {x: -5.5879353e-11, y: 0.15282299, z: 0.004237213}
+      rotation: {x: -0.07018347, y: 0, z: -0, w: 0.9975341}
+      scale: {x: 1, y: 1.0000005, z: 1.0000005}
+    - name: CH_Chest
+      parentName: CH_Spine
+      position: {x: 7.4505804e-11, y: 0.19962937, z: 0.026032904}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.9999996, z: 0.9999996}
+    - name: CH_Shou_L
+      parentName: CH_Chest
+      position: {x: -0.039152414, y: 0.14429384, z: 0.020353846}
+      rotation: {x: 0.00000035762787, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Uppe_L
+      parentName: CH_Shou_L
+      position: {x: -0.26034606, y: 0.0073625944, z: 0.0010566711}
+      rotation: {x: 0.0040548523, y: -0.02463305, z: 0.048604622, w: 0.99850607}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1}
+    - name: CH_For_L
+      parentName: CH_Uppe_L
+      position: {x: -0.20290513, y: 0.01756239, z: 0.009648132}
+      rotation: {x: 0.06807377, y: 0.01684854, z: 0.024848145, w: 0.9972285}
+      scale: {x: 0.99999964, y: 1.0000001, z: 0.9999994}
+    - name: CH_Hand_L
+      parentName: CH_For_L
+      position: {x: -0.1963961, y: 0.014039706, z: -0.00048813818}
+      rotation: {x: -0.068073265, y: -0.016848445, z: -0.024848161, w: 0.99722856}
+      scale: {x: 1.0000006, y: 0.99999994, z: 1}
+    - name: CH_Shou_R
+      parentName: CH_Chest
+      position: {x: 0.038994938, y: 0.14429398, z: 0.02035384}
+      rotation: {x: -0.000000043711392, y: 1, z: 0.00000032037497, w: -1.40040355e-14}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Uppe_R
+      parentName: CH_Shou_R
+      position: {x: -0.26034606, y: 0.0073625944, z: -0.0010566807}
+      rotation: {x: -0.0040550623, y: 0.024632974, z: 0.04860434, w: 0.9985061}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
+    - name: CH_For_R
+      parentName: CH_Uppe_R
+      position: {x: -0.20290527, y: 0.017562332, z: -0.009648085}
+      rotation: {x: -0.06807364, y: -0.016848693, z: 0.024848256, w: 0.9972285}
+      scale: {x: 1.0000001, y: 0.9999996, z: 0.9999995}
+    - name: CH_Hand_R
+      parentName: CH_For_R
+      position: {x: -0.19639625, y: 0.014039821, z: 0.0004882145}
+      rotation: {x: 0.06807328, y: 0.016848763, z: -0.024848385, w: 0.9972285}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1}
+    - name: CH_Neck
+      parentName: CH_Chest
+      position: {x: 7.0780515e-10, y: 0.1528682, z: 0.020929718}
+      rotation: {x: 0.08715595, y: 0, z: -0, w: 0.9961947}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: CH_Head
+      parentName: CH_Neck
+      position: {x: -0, y: 0.07664604, z: -0.0025779724}
+      rotation: {x: 0.0000000055879363, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: CH_Thigh_L
+      parentName: CH_Hips
+      position: {x: -0.10210716, y: -0.02186593, z: 0.002355728}
+      rotation: {x: 0.53999996, y: 0.47005823, z: 0.51924413, w: 0.4667235}
+      scale: {x: 1.0000002, y: 1, z: 0.99999976}
+    - name: CH_Shin_L
+      parentName: CH_Thigh_L
+      position: {x: -0.2590381, y: 0.03711088, z: 0.006972456}
+      rotation: {x: -1.2246469e-16, y: 0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.9999998}
+    - name: CH_Foot_L
+      parentName: CH_Shin_L
+      position: {x: -0.22817712, y: 0.016483326, z: -0.0056604957}
+      rotation: {x: -0.02440171, y: -0.0034631803, z: -0.3421764, w: 0.93931246}
+      scale: {x: 1.0000005, y: 1.0000002, z: 0.99999994}
+    - name: CH_Toe_L
+      parentName: CH_Foot_L
+      position: {x: -0.12435104, y: -0.03680663, z: 0.0032869815}
+      rotation: {x: 0.00022148258, y: 0.024015905, z: -0.47433737, w: 0.8800155}
+      scale: {x: 1.0000005, y: 0.99999976, z: 0.99999994}
+    - name: CH_Thigh_R
+      parentName: CH_Hips
+      position: {x: 0.10194969, y: -0.021865921, z: 0.002355728}
+      rotation: {x: 0.51924384, y: 0.4667239, z: 0.5399998, w: 0.4700584}
+      scale: {x: 0.9999997, y: 0.9999995, z: 0.9999999}
+    - name: CH_Shin_R
+      parentName: CH_Thigh_R
+      position: {x: -0.2590383, y: 0.037110634, z: -0.0069725323}
+      rotation: {x: 1.4190977e-13, y: -0.0000002663161, z: 0.0000005326322, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: CH_Foot_R
+      parentName: CH_Shin_R
+      position: {x: -0.22817695, y: 0.016483802, z: 0.0056606103}
+      rotation: {x: 0.024401816, y: 0.0034635544, z: -0.3421771, w: 0.9393122}
+      scale: {x: 1.0000006, y: 0.99999994, z: 1.0000002}
+    - name: CH_Toe_R
+      parentName: CH_Foot_R
+      position: {x: -0.124350905, y: -0.036806773, z: -0.0032870006}
+      rotation: {x: -0.00022167899, y: -0.024016224, z: -0.47433746, w: 0.88001543}
+      scale: {x: 1.0000008, y: 0.9999995, z: 1.0000002}
+    - name: head
+      parentName: MCunitychan(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg_L
+      parentName: MCunitychan(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: leg_R
+      parentName: MCunitychan(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.497
+    foreArmTwist: 0.497
+    upperLegTwist: 0.516
+    legTwist: 0.513
+    armStretch: 0.053
+    legStretch: 0.053
+    feetSpacing: 0.003
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

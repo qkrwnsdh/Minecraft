@@ -136,55 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smoker_1
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 486
-        width: 36
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e764359d273947b44ae0a4fc3fc5cd40
-      internalID: 1235378131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smoker_3
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 444
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76711a1e265bfad4e957d8a9155ec674
-      internalID: -597589362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: smoker_4
       rect:
         serializedVersion: 2
-        x: 356
-        y: 456
-        width: 44
-        height: 18
+        x: 355
+        y: 455
+        width: 46
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,118 +157,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoker_6
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 414
-        width: 36
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35ab70bf651bf2b49b1b2b66916a32ee
-      internalID: 103377501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smoker_8
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 416
-        width: 44
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7555a57b99d494468b19fdb727f9685
-      internalID: -782312437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smoker_9
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 400
-        width: 52
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93d2bbce8fd89044da56d4e680beb84b
-      internalID: -2108202548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smoker_10
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 372
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa8448926469f1048a5f8811bce81782
-      internalID: -1499029378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smoker_11
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 238
-        width: 324
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0ec543f68d661f4a936a9d844b92ece
-      internalID: 165697767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: smoker_12
       rect:
         serializedVersion: 2
         x: 14
         y: 194
         width: 324
-        height: 36
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,6 +173,27 @@ TextureImporter:
       bones: []
       spriteID: d5bd92a6592364a47b2ef91ec9aac382
       internalID: -47295341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoker_0
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 485
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f67b9ef4c7a4bd46aefa86841c19362
+      internalID: 1349216195
       vertices: []
       indices: 
       edges: []

@@ -136,196 +136,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Resource_Inventory_0
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 354
-        width: 36
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2e725830d24b2946841a5d078703c3c
-      internalID: -759788192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_1
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 354
-        width: 82
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e391910d2f5944244a416a0c0b7ac70a
-      internalID: -768837808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_2
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 478
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b89ec3574b268b949b129e8277b0484a
-      internalID: -830936967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_3
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 406
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbf76699c2615254398c85248e5c0616
-      internalID: -1233551662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_4
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 429
-        width: 26
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38ad1bafdaa33b34faf319fe3a3dfe37
-      internalID: 1726853610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_5
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 422
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83298fe9645661a449c1d838d82d7eaf
-      internalID: -1710164249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_6
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 440
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcb24b8b26e3017439386186592f8309
-      internalID: -951696249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_7
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 354
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cc917cc31f124f4f970f600f3fb0c06
-      internalID: 732942138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_8
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 238
-        width: 324
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecfaac5d8aedaa24c9e9f1244dcf8140
-      internalID: 1425127622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Resource_Inventory_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 194
+        width: 332
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c678a36bcd5f9274db468ad5921fb556
+      internalID: -636068016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resource_Inventory_0
       rect:
         serializedVersion: 2
         x: 14
@@ -339,71 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c678a36bcd5f9274db468ad5921fb556
-      internalID: -636068016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_10
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 122
-        width: 228
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a711741d54085494bbb81f1e867f3fff
-      internalID: 1748967448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_11
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 134
-        width: 44
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e8e58aa02c867045a98e78aabc13c44
-      internalID: -1886697395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Resource_Inventory_12
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 134
-        width: 44
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f31cb85dd4656e42a6429f334d1d3b3
-      internalID: -1980545767
+      spriteID: 29c9b3c0c5931f54b8a472210f154f47
+      internalID: -759788192
       vertices: []
       indices: 
       edges: []

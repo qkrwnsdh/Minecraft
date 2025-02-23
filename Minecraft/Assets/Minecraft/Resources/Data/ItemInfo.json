@@ -1,0 +1,254 @@
+{
+    "itemInfos": [
+        {
+            "name": "Item_Beef_Processed",
+            "type": "Food",
+            "offset": { "x": 0.000, "y": 0.875 }
+        },
+        {
+            "name": "Item_Beef_Raw",
+            "type": "Food",
+            "offset": { "x": 0.125, "y": 0.875 }
+        },
+        {
+            "name": "Item_Chicken_Processed",
+            "type": "Food",
+            "offset": { "x": 0.375, "y": 0.875 }
+        },
+        {
+            "name": "Item_Chicken_Raw",
+            "type": "Food",
+            "offset": { "x": 0.500, "y": 0.875 }
+        },
+        {
+            "name": "Item_Mutton_Processed",
+            "type": "Food",
+            "offset": { "x": 0.875, "y": 0.375 }
+        },
+        {
+            "name": "Item_Mutton_Raw",
+            "type": "Food",
+            "offset": { "x": 0.000, "y": 0.250 }
+        },
+        {
+            "name": "Item_Porkchop_Processed",
+            "type": "Food",
+            "offset": { "x": 0.250, "y": 0.250 }
+        },
+        {
+            "name": "Item_Porkchop_Raw",
+            "type": "Food",
+            "offset": { "x": 0.375, "y": 0.250 }
+        },
+        {
+            "name": "Item_Rabbit_Processed",
+            "type": "Food",
+            "offset": { "x": 0.500, "y": 0.250 }
+        },
+        {
+            "name": "Item_Rabbit_Raw",
+            "type": "Food",
+            "offset": { "x": 0.625, "y": 0.250 }
+        },
+        {
+            "name": "Item_Rotten_Raw",
+            "type": "Food",
+            "offset": { "x": 0.125, "y": 0.125 }
+        },
+        {
+            "name": "Item_Copper_Processed",
+            "type": "Material",
+            "offset": { "x": 0.750, "y": 0.875 }
+        },
+        {
+            "name": "Item_Copper_Raw",
+            "type": "Material",
+            "offset": { "x": 0.750, "y": 0.250 }
+        },
+        {
+            "name": "Item_Iron_Processed",
+            "type": "Material",
+            "offset": { "x": 0.125, "y": 0.375 }
+        },
+        {
+            "name": "Item_Iron_Raw",
+            "type": "Material",
+            "offset": { "x": 0.000, "y": 0.125 }
+        },
+        {
+            "name": "Item_Gold_Processed",
+            "type": "Material",
+            "offset": { "x": 0.375, "y": 0.500 }
+        },
+        {
+            "name": "Item_Gold_Raw",
+            "type": "Material",
+            "offset": { "x": 0.875, "y": 0.250 }
+        },
+        {
+            "name": "Item_Coal_Raw",
+            "type": "Material",
+            "offset": { "x": 0.625, "y": 0.875 }
+        },
+        {
+            "name": "Item_Diamond_Raw",
+            "type": "Material",
+            "offset": { "x": 0.250, "y": 0.750 }
+        },
+        {
+            "name": "Item_Stick_Raw",
+            "type": "Material",
+            "offset": { "x": 0.500, "y": 0.125 }
+        },
+        {
+            "name": "Item_Leather_Raw",
+            "type": "Material",
+            "offset": { "x": 0.625, "y": 0.375 }
+        },
+        {
+            "name": "Item_Iron_Helmet",
+            "type": "Equipment",
+            "offset": { "x": 0.000, "y": 0.375 }
+        },
+        {
+            "name": "Item_Gold_Helmet",
+            "type": "Equipment",
+            "offset": { "x": 0.250, "y": 0.500 }
+        },
+        {
+            "name": "Item_Diamond_Helmet",
+            "type": "Equipment",
+            "offset": { "x": 0.625, "y": 0.750 }
+        },
+        {
+            "name": "Item_Iron_Chest",
+            "type": "Equipment",
+            "offset": { "x": 0.875, "y": 0.500 }
+        },
+        {
+            "name": "Item_Gold_Chest",
+            "type": "Equipment",
+            "offset": { "x": 0.125, "y": 0.500 }
+        },
+        {
+            "name": "Item_Diamond_Chest",
+            "type": "Equipment",
+            "offset": { "x": 0.500, "y": 0.750 }
+        },
+        {
+            "name": "Item_Iron_Leg",
+            "type": "Equipment",
+            "offset": { "x": 0.250, "y": 0.375 }
+        },
+        {
+            "name": "Item_Gold_Leg",
+            "type": "Equipment",
+            "offset": { "x": 0.500, "y": 0.500 }
+        },
+        {
+            "name": "Item_Diamond_Leg",
+            "type": "Equipment",
+            "offset": { "x": 0.750, "y": 0.750 }
+        },
+        {
+            "name": "Item_Iron_Boots",
+            "type": "Equipment",
+            "offset": { "x": 0.750, "y": 0.500 }
+        },
+        {
+            "name": "Item_Gold_Boots",
+            "type": "Equipment",
+            "offset": { "x": 0.000, "y": 0.500 }
+        },
+        {
+            "name": "Item_Diamond_Boots",
+            "type": "Equipment",
+            "offset": { "x": 0.375, "y": 0.750 }
+        },
+        {
+            "name": "Item_Wood_Sword",
+            "type": "Equipment",
+            "offset": { "x": 0.750, "y": 0.125 }
+        },
+        {
+            "name": "Item_Stone_Sword",
+            "type": "Equipment",
+            "offset": { "x": 0.625, "y": 0.125 }
+        },
+        {
+            "name": "Item_Iron_Sword",
+            "type": "Equipment",
+            "offset": { "x": 0.375, "y": 0.375 }
+        },
+        {
+            "name": "Item_Gold_Sword",
+            "type": "Equipment",
+            "offset": { "x": 0.625, "y": 0.500 }
+        },
+        {
+            "name": "Item_Diamond_Sword",
+            "type": "Equipment",
+            "offset": { "x": 0.875, "y": 0.750 }
+        },
+        {
+            "name": "Item_Chest_Processed",
+            "type": "Block",
+            "offset": { "x": 0.250, "y": 0.875 }
+        },
+        {
+            "name": "Item_Craft_Processed",
+            "type": "Block",
+            "offset": { "x": 0.875, "y": 0.875 }
+        },
+        {
+            "name": "Item_Stone_Processed",
+            "type": "Block",
+            "offset": { "x": 0.125, "y": 0.750 }
+        },
+        {
+            "name": "Item_Stone_Raw",
+            "type": "Block",
+            "offset": { "x": 0.000, "y": 0.750 }
+        },
+        {
+            "name": "Item_Dirt_Raw",
+            "type": "Block",
+            "offset": { "x": 0.000, "y": 0.625 }
+        },
+        {
+            "name": "Item_Furnace_Processed",
+            "type": "Block",
+            "offset": { "x": 0.750, "y": 0.625 }
+        },
+        {
+            "name": "Item_Leaf_Raw",
+            "type": "Block",
+            "offset": { "x": 0.500, "y": 0.375 }
+        },
+        {
+            "name": "Item_Wood_Processed",
+            "type": "Block",
+            "offset": { "x": 0.125, "y": 0.250 }
+        },
+        {
+            "name": "Item_Wood_Raw",
+            "type": "Block",
+            "offset": { "x": 0.750, "y": 0.375 }
+        },
+        {
+            "name": "Item_Sand_Processed",
+            "type": "Block",
+            "offset": { "x": 0.875, "y": 0.625 }
+        },
+        {
+            "name": "Item_Sand_Raw",
+            "type": "Block",
+            "offset": { "x": 0.250, "y": 0.125 }
+        },
+        {
+            "name": "Item_Snow_Raw",
+            "type": "Block",
+            "offset": { "x": 0.375, "y": 0.125 }
+        }
+    ]
+}

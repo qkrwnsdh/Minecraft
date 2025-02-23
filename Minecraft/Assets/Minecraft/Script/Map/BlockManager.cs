@@ -1,6 +1,6 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class BlockManager : MonoBehaviour
 {
@@ -14,67 +14,84 @@ public class BlockManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            blockInfoDictionary = JsonReader.LoadBlockInfoJson<BlockInfo, BlockInfoData>(Define.PATH_BLOCK_INFO);
-            blockDatas = new Dictionary<string, BlockData>();
-
-            // BlockData 객체들을 초기화하여 blockDatas에 저장
-            foreach (var blockInfo in blockInfoDictionary.Values)
-            {
-                blockDatas[blockInfo.name] = new BlockData(blockInfo);
-            }
+            InitializationDictionary();
         }
         else
         {
             Destroy(gameObject);
         }
     }
+
+    private void InitializationDictionary()
+    {
+        blockInfoDictionary = JsonReader.LoadToJson<string, BlockInfo, BlockInfoData>(Define.PATH_BLOCK_INFO);
+        blockCreateDictionary = JsonReader.LoadToJson<string, BlockCreate, BlockCreateData>(Define.PATH_BLOCK_CREATE);
+    }
+
     #endregion
 
-    private Dictionary<string, BlockInfo> blockInfoDictionary;
-    public Dictionary<string, BlockData> blockDatas;
+    #region Block Info
+    public Material blockMaterial;
 
-    public BlockInfo GetBlockInfoData(string id)
+    const int materialCount = 6;
+
+    public Material[] SetBlockMaterial(BlockInfo blockInfo, int value)
     {
-        if (blockInfoDictionary.TryGetValue(id, out BlockInfo blockInfo))
+        Material[] materials = new Material[materialCount];
+
+        if (!(blockInfo.offsets.Count < value + 1))
+        {
+            for (int i = 0; i < materialCount; i++)
+            {
+                materials[i] = new Material(blockMaterial);
+                materials[i].SetTextureOffset("_MainTex", blockInfo.offsets[value].offset[i]);
+            }
+        }
+
+        return materials;
+    }
+
+    private Dictionary<string, BlockInfo> blockInfoDictionary;
+
+    public BlockInfo GetBlockInfoData(string name)
+    {
+        if (blockInfoDictionary.TryGetValue(name, out BlockInfo blockInfo))
         {
             return blockInfo;
         }
 
-        Debug.LogError("Block id not found");
+        Debug.LogError($"{name} Item name not found");
         return null;
     }
-}
+    #endregion
 
-public struct BlockData
-{
-    public readonly string name;
-    public readonly bool type;
-    public readonly int health;
-    public readonly string drop;
-    public readonly List<Offset> offsets;
+    #region Block Create
+    private Dictionary<string, BlockCreate> blockCreateDictionary;
 
-    public BlockData(BlockInfo blockInfo)
+    public BlockCreate GetBlockCreateData(string name)
     {
-        name = blockInfo.name;
-        type = blockInfo.type;
-        health = blockInfo.health;
-        drop = blockInfo.drop;
-        offsets = blockInfo.offsets;
+        if (blockCreateDictionary.TryGetValue(name, out BlockCreate blockCreate))
+        {
+            return blockCreate;
+        }
+
+        Debug.LogError($"{name} Item name not found");
+        return null;
     }
+    #endregion
 }
 
-#region BlockInfo Attribute
+#region BlockInfo
 [Serializable]
 public class Offset
 {
-    public List<Vector2> offset;
+    public Vector2[] offset;
 }
 
 [Serializable]
 public class BlockInfo
 {
     public string name;
-    public bool type;
     public int health;
     public string drop;
     public List<Offset> offsets;
@@ -84,5 +101,20 @@ public class BlockInfo
 public class BlockInfoData
 {
     public BlockInfo[] blockInfos;
+}
+#endregion
+
+#region BlockCreate
+[Serializable]
+public class BlockCreate
+{
+    public string name;
+    public string result;
+}
+
+[Serializable]
+public class BlockCreateData
+{
+    public BlockCreate[] blockCreates;
 }
 #endregion

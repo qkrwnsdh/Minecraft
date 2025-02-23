@@ -1,0 +1,59 @@
+{
+    "itemFoods": [
+        {
+            "name": "Item_Beef_Processed",
+            "health": 2,
+            "food": 2
+        },
+        {
+            "name": "Item_Beef_Raw",
+            "health": -1,
+            "food": 1
+        },
+        {
+            "name": "Item_Chicken_Processed",
+            "health": 2,
+            "food": 2
+        },
+        {
+            "name": "Item_Chicken_Raw",
+            "health": -1,
+            "food": -1
+        },
+        {
+            "name": "Item_Mutton_Processed",
+            "health": 2,
+            "food": 2
+        },
+        {
+            "name": "Item_Mutton_Raw",
+            "health": -1,
+            "food": 1
+        },
+        {
+            "name": "Item_Porkchop_Processed",
+            "health": 2,
+            "food": 2
+        },
+        {
+            "name": "Item_Porkchop_Raw",
+            "health": -1,
+            "food": 1
+        },
+        {
+            "name": "Item_Rabbit_Processed",
+            "health": 2,
+            "food": 2
+        },
+        {
+            "name": "Item_Rabbit_Raw",
+            "health": -1,
+            "food": 1
+        },
+        {
+            "name": "Item_Rotten_Raw",
+            "health": -1,
+            "food": 1
+        }
+    ]
+}

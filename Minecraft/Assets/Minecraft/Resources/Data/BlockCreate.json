@@ -1,0 +1,52 @@
+{
+  "blockCreates":[
+    {
+      "name": "Item_Chest_Processed",
+      "result": "Block_Chest"
+    },
+    {
+      "name": "Item_Craft_Processed",
+      "result": "Block_Craft"
+    },
+    {
+      "name": "Item_Stone_Raw",
+      "result": "Block_Stone"
+    },
+    {
+      "name": "Item_Stone_Processed",
+      "result": "Block_Stone_Tile"
+    },
+    {
+      "name": "Item_Dirt_Raw",
+      "result": "Block_Dirt"
+    },
+    {
+      "name": "Item_Wood_Raw",
+      "result": "Block_Wood"
+    },
+    {
+      "name": "Item_Wood_Processed",
+      "result": "Block_Wood_Tile"
+    },
+    {
+      "name": "Item_Sand_Raw",
+      "result": "Block_Sand"
+    },
+    {
+      "name": "Item_Snow_Raw",
+      "result": "Block_Snow"
+    },
+    {
+      "name": "Item_Furnace_Processed",
+      "result": "Block_Furnace"
+    },
+    {
+      "name": "Item_Sand_Processed",
+      "result": "Block_Glass"
+    },
+    {
+      "name": "Item_Leaf_Raw",
+      "result": "Block_Leaf"
+    }
+  ]
+}

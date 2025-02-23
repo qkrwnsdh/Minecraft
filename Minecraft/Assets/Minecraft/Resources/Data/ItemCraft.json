@@ -1,0 +1,406 @@
+{
+    "itemCrafts": [
+        {
+            "result": { "name": "Item_Wood_Processed", "stack": 4 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Wood_Raw" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 0, "y": 1, "name": "Item_Wood_Raw" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 0, "y": 2, "name": "Item_Wood_Raw" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 1, "y": 0, "name": "Item_Wood_Raw" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 1, "y": 1, "name": "Item_Wood_Raw" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 1, "y": 2, "name": "Item_Wood_Raw" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 2, "y": 0, "name": "Item_Wood_Raw" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 2, "y": 1, "name": "Item_Wood_Raw" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 2, "y": 2, "name": "Item_Wood_Raw" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Stick_Raw", "stack": 4 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Wood_Processed" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 0, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 0, "y": 2, "name": "Item_Wood_Processed" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 1, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 1, "name": "Item_Wood_Processed" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 1, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Wood_Processed" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 2, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Wood_Processed" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 2, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 2, "name": "Item_Wood_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Craft_Processed", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 1, "name": "Item_Wood_Processed" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 0, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 0, "y": 2, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Wood_Processed" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 1, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Wood_Processed" }
+                    ]
+                },
+                {
+                    "material": [
+                        { "x": 1, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 2, "name": "Item_Wood_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Chest_Processed", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 0, "y": 2, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 2, "y": 2, "name": "Item_Wood_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Furnace_Processed", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Stone_Raw" },
+                        { "x": 0, "y": 1, "name": "Item_Stone_Raw" },
+                        { "x": 0, "y": 2, "name": "Item_Stone_Raw" },
+                        { "x": 1, "y": 0, "name": "Item_Stone_Raw" },
+                        { "x": 1, "y": 2, "name": "Item_Stone_Raw" },
+                        { "x": 2, "y": 0, "name": "Item_Stone_Raw" },
+                        { "x": 2, "y": 1, "name": "Item_Stone_Raw" },
+                        { "x": 2, "y": 2, "name": "Item_Stone_Raw" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Wood_Sword", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 1, "y": 0, "name": "Item_Stick_Raw" },
+                        { "x": 1, "y": 1, "name": "Item_Wood_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Wood_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Stone_Sword", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 1, "y": 0, "name": "Item_Stick_Raw" },
+                        { "x": 1, "y": 1, "name": "Item_Stone_Raw" },
+                        { "x": 1, "y": 2, "name": "Item_Stone_Raw" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Iron_Sword", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 1, "y": 0, "name": "Item_Stick_Raw" },
+                        { "x": 1, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Iron_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Gold_Sword", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 1, "y": 0, "name": "Item_Stick_Raw" },
+                        { "x": 1, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Gold_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Diamond_Sword", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 1, "y": 0, "name": "Item_Stick_Raw" },
+                        { "x": 1, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 1, "y": 2, "name": "Item_Diamond_Raw" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Iron_Helmet", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 1, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Iron_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Gold_Helmet", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 1, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Gold_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Diamond_Helmet", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 0, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 1, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 1, "name": "Item_Diamond_Raw" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Iron_Chest", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 0, "y": 2, "name": "Item_Iron_Processed" },
+                        { "x": 1, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 1, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 2, "name": "Item_Iron_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Gold_Chest", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 0, "y": 2, "name": "Item_Gold_Processed" },
+                        { "x": 1, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 1, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 2, "name": "Item_Gold_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Diamond_Chest", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 0, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 0, "y": 2, "name": "Item_Diamond_Raw" },
+                        { "x": 1, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 1, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 2, "name": "Item_Diamond_Raw" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Iron_Leg", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 0, "y": 2, "name": "Item_Iron_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 2, "name": "Item_Iron_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Gold_Leg", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 0, "y": 2, "name": "Item_Gold_Processed" },
+                        { "x": 1, "y": 2, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 2, "name": "Item_Gold_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Diamond_Leg", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 0, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 0, "y": 2, "name": "Item_Diamond_Raw" },
+                        { "x": 1, "y": 2, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 2, "name": "Item_Diamond_Raw" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Iron_Boots", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Iron_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Iron_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Gold_Boots", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 0, "y": 1, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 0, "name": "Item_Gold_Processed" },
+                        { "x": 2, "y": 1, "name": "Item_Gold_Processed" }
+                    ]
+                }
+            ]
+        },
+        {
+            "result": { "name": "Item_Diamond_Boots", "stack": 1 },
+            "materials": [
+                {
+                    "material": [
+                        { "x": 0, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 0, "y": 1, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 0, "name": "Item_Diamond_Raw" },
+                        { "x": 2, "y": 1, "name": "Item_Diamond_Raw" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

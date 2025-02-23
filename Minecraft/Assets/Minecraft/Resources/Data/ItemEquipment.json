@@ -1,0 +1,89 @@
+{
+    "itemEquipments": [
+        {
+            "name": "Item_Gold_Helmet",
+            "type": "Helmet",
+            "value": 3
+        },
+        {
+            "name": "Item_Gold_Chest",
+            "type": "Chest",
+            "value": 3
+        },
+        {
+            "name": "Item_Gold_Leg",
+            "type": "Leg",
+            "value": 3
+        },
+        {
+            "name": "Item_Gold_Boots",
+            "type": "Boots",
+            "value": 3
+        },
+        {
+            "name": "Item_Gold_Sword",
+            "type": "Weapone",
+            "value": 5
+        },
+        {
+            "name": "Item_Iron_Helmet",
+            "type": "Helmet",
+            "value": 4
+        },
+        {
+            "name": "Item_Iron_Chest",
+            "type": "Chest",
+            "value": 4
+        },
+        {
+            "name": "Item_Iron_Leg",
+            "type": "Leg",
+            "value": 4
+        },
+        {
+            "name": "Item_Iron_Boots",
+            "type": "Boots",
+            "value": 4
+        },
+        {
+            "name": "Item_Iron_Sword",
+            "type": "Weapone",
+            "value": 5
+        },
+        {
+            "name": "Item_Diamond_Helmet",
+            "type": "Helmet",
+            "value": 5
+        },
+        {
+            "name": "Item_Diamond_Chest",
+            "type": "Chest",
+            "value": 5
+        },
+        {
+            "name": "Item_Diamond_Leg",
+            "type": "Leg",
+            "value": 5
+        },
+        {
+            "name": "Item_Diamond_Boots",
+            "type": "Boots",
+            "value": 5
+        },
+        {
+            "name": "Item_Diamond_Sword",
+            "type": "Weapone",
+            "value": 10
+        },
+        {
+            "name": "Item_Wood_Sword",
+            "type": "Weapone",
+            "value": 2
+        },
+        {
+            "name": "Item_Stone_Sword",
+            "type": "Weapone",
+            "value": 3
+        }
+    ]
+}

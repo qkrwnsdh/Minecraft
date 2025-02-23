@@ -3,7 +3,7 @@
     {
       "name": "Block_Chest",
       "health": 10,
-      "drop": "Item_Chest",
+      "drop": "Item_Chest_Processed",
       "offsets": [
         {
           "offset": [
@@ -18,9 +18,9 @@
       ]
     },
     {
-      "name": "Block_Crafting",
+      "name": "Block_Craft",
       "health": 10,
-      "drop": "Item_Crafting",
+      "drop": "Item_Craft_Processed",
       "offsets": [
         {
           "offset": [
@@ -37,7 +37,7 @@
     {
       "name": "Block_Stone",
       "health": 10,
-      "drop": "Item_Stone",
+      "drop": "Item_Stone_Raw",
       "offsets": [
         {
           "offset": [
@@ -54,7 +54,7 @@
     {
       "name": "Block_Coal",
       "health": 10,
-      "drop": "Item_Coal",
+      "drop": "Item_Coal_Raw",
       "offsets": [
         {
           "offset": [
@@ -71,7 +71,7 @@
     {
       "name": "Block_Diamond",
       "health": 10,
-      "drop": "Item_Diamond",
+      "drop": "Item_Diamond_Raw",
       "offsets": [
         {
           "offset": [
@@ -88,7 +88,7 @@
     {
       "name": "Block_Gold",
       "health": 10,
-      "drop": "Item_Gold",
+      "drop": "Item_Gold_Raw",
       "offsets": [
         {
           "offset": [
@@ -105,7 +105,7 @@
     {
       "name": "Block_Iron",
       "health": 10,
-      "drop": "Item_Iron",
+      "drop": "Item_Iron_Raw",
       "offsets": [
         {
           "offset": [
@@ -122,7 +122,7 @@
     {
       "name": "Block_Stone_Tile",
       "health": 10,
-      "drop": "Item_Stone_Tile",
+      "drop": "Item_Stone_Processed",
       "offsets": [
         {
           "offset": [
@@ -139,26 +139,26 @@
     {
       "name": "Block_Dirt",
       "health": 10,
-      "drop": "Item_Dirt",
+      "drop": "Item_Dirt_Raw",
       "offsets": [
         {
           "offset": [
-            { "x": 0.500, "y": 0.500 },
-            { "x": 0.375, "y": 0.250 },
-            { "x": 0.500, "y": 0.500 },
-            { "x": 0.500, "y": 0.500 },
-            { "x": 0.500, "y": 0.500 },
+            { "x": 0.500, "y": 0.250 },
+            { "x": 0.500, "y": 0.250 },
+            { "x": 0.500, "y": 0.250 },
+            { "x": 0.500, "y": 0.250 },
+            { "x": 0.250, "y": 0.250 },
             { "x": 0.500, "y": 0.500 }
           ]
         },
         {
           "offset": [
-            { "x": 0.500, "y": 0.250 },
-            { "x": 0.250, "y": 0.250 },
             { "x": 0.500, "y": 0.500 },
-            { "x": 0.500, "y": 0.250 },
-            { "x": 0.500, "y": 0.250 },
-            { "x": 0.500, "y": 0.250 }
+            { "x": 0.500, "y": 0.500 },
+            { "x": 0.500, "y": 0.500 },
+            { "x": 0.500, "y": 0.500 },
+            { "x": 0.375, "y": 0.250 },
+            { "x": 0.500, "y": 0.500 }
           ]
         }
       ]
@@ -166,7 +166,7 @@
     {
       "name": "Block_Wood",
       "health": 10,
-      "drop": "Item_Wood",
+      "drop": "Item_Wood_Raw",
       "offsets": [
         {
           "offset": [
@@ -183,7 +183,7 @@
     {
       "name": "Block_Wood_Tile",
       "health": 10,
-      "drop": "Item_Wood_Tile",
+      "drop": "Item_Wood_Processed",
       "offsets": [
         {
           "offset": [
@@ -200,7 +200,7 @@
     {
       "name": "Block_Sand",
       "health": 10,
-      "drop": "Item_Sand",
+      "drop": "Item_Sand_Raw",
       "offsets": [
         {
           "offset": [
@@ -217,7 +217,7 @@
     {
       "name": "Block_Snow",
       "health": 10,
-      "drop": "Item_Snow",
+      "drop": "Item_Snow_Raw",
       "offsets": [
         {
           "offset": [
@@ -234,7 +234,7 @@
     {
       "name": "Block_Furnace",
       "health": 10,
-      "drop": "Item_Furnace",
+      "drop": "Item_Furnace_Processed",
       "offsets": [
         {
           "offset": [
@@ -261,7 +261,7 @@
     {
       "name": "Block_Glass",
       "health": 10,
-      "drop": "Item_Glass",
+      "drop": "Item_Sand_Processed",
       "offsets": [
         {
           "offset": [
@@ -278,7 +278,7 @@
     {
       "name": "Block_Leaf",
       "health": 10,
-      "drop": "Item_Leaf",
+      "drop": "Item_Leaf_Raw",
       "offsets": [
         {
           "offset": [

@@ -4,82 +4,65 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    private BlockData data;
+    public BlockInfo blockInfo;
+    public EndlessMap.ChunkData chunkData;
 
-    private MeshRenderer render;
-    private Material[] materials;
-
-    private int currentHealth;
+    public int currentHealth;
     private Coroutine hitCoroutine;
 
-    #region Initialization
-    private void Start()
-    {
-        InitializationComponents();
-        InitializationSetups();
-    }
-
-    private void InitializationComponents()
-    {
-        render = GetComponent<MeshRenderer>();
-    }
-
-    private void InitializationSetups()
-    {
-        data = BlockManager.Instance.blockDatas[name];
-        materials = render.materials;
-        currentHealth = data.health;
-    }
-    #endregion
-
     #region Interaction
-    public void SetOffset(int value)
+    public void SetBlock(string name, EndlessMap.ChunkData chunkData)
     {
-        if (data.offsets.Count < value + 1)
-        {
-            Debug.LogError($"{name} is not found offsets {value}");
+        this.name = name;
+        this.chunkData = chunkData;
 
-            return;
-        }
-
-        for (int i = 0; i < materials.Length; i++)
-        {
-            materials[i].SetTextureOffset("_MainTex", data.offsets[value].offset[i]);
-        }
+        blockInfo = BlockManager.Instance.GetBlockInfoData(name);
+        currentHealth = blockInfo.health;
     }
 
-    public void HitHealth(Player player, int damage)
+    public void HitHealth(Controller controller)
     {
+        ClientPlayer player = controller.GetPlayer;
+
         // 피해 간격
         if (hitCoroutine != null) { return; }
 
         // 피해 감소
-        currentHealth -= damage;
-        UpdateHealth(player);
+        currentHealth -= player.Damage;
+        UpdatePlayerInteraction(controller);
 
         // 체력이 0 이하가 되면 블록 무효화
         if (currentHealth <= 0)
         {
-            InvalidBlock(player);
+            UpdatePlayerInventory(controller);
+            InActive();
         }
         // 피해 간격 코루틴 시작
         else
         {
-            hitCoroutine = StartCoroutine(HitCoroutine(damage));
+            hitCoroutine = StartCoroutine(HitCoroutine());
         }
     }
 
-    void UpdateHealth(Player player)
+    public bool CreateBlock(string name, Vector3? hitDirection)
     {
-        // 체력바로 표시하기
+        return chunkData.FindChunkForBlock(transform.position, name, (Vector3)hitDirection);
     }
 
-    void InvalidBlock(Player player)
+    void UpdatePlayerInteraction(Controller controller) => controller.GetUi.ToggleInteraction(this);
+    void UpdatePlayerInventory(Controller controller)
     {
-
+        controller.GetUi.data.AddItem(blockInfo.drop);
+        controller.GetUi.UpdateQuickSlot();
+    }
+    void InActive()
+    {
+        hitCoroutine = null;
+        gameObject.SetActive(false);
+        chunkData.RemoveBlock(transform.position);
     }
 
-    IEnumerator HitCoroutine(int damage)
+    IEnumerator HitCoroutine()
     {
         // 피해 간격 대기
         yield return new WaitForSeconds(Define.HIT_INTERVAL);

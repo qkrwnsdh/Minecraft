@@ -1,0 +1,54 @@
+{
+    "itemFurnaces": [
+        {
+            "result": "Item_Beef_Processed",
+            "material": "Item_Beef_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Chicken_Processed",
+            "material": "Item_Chicken_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Mutton_Processed",
+            "material": "Item_Mutton_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Porkchop_Processed",
+            "material": "Item_Porkchop_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Rabbit_Processed",
+            "material": "Item_Rabbit_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Copper_Processed",
+            "material": "Item_Copper_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Iron_Processed",
+            "material": "Item_Iron_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Gold_Processed",
+            "material": "Item_Gold_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Stone_Processed",
+            "material": "Item_Stone_Raw",
+            "time": 5
+        },
+        {
+            "result": "Item_Sand_Processed",
+            "material": "Item_Sand_Raw",
+            "time": 5
+        }
+    ]
+}

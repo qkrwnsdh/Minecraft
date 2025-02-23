@@ -7,14 +7,16 @@ public class Enemy : MonoBehaviour
     private int currentHealth;
     private Coroutine hitCoroutine;
 
-    public void HitHealth(Player player, int damage)
+    public void HitHealth(Controller controller)
     {
         // 피해 간격
         if (hitCoroutine != null) { return; }
 
+        ClientPlayer player = controller.GetPlayer;
+
         // 피해 감소
-        currentHealth -= damage;
-        UpdateHealth(player);
+        currentHealth -= player.Damage;
+        UpdateHealth(controller);
 
         // 체력이 0 이하가 되면 블록 무효화
         if (currentHealth <= 0)
@@ -24,16 +26,16 @@ public class Enemy : MonoBehaviour
         // 피해 간격 코루틴 시작
         else
         {
-            hitCoroutine = StartCoroutine(HitCoroutine(damage));
+            hitCoroutine = StartCoroutine(HitCoroutine(player.Damage));
         }
     }
 
-    void UpdateHealth(Player player)
+    void UpdateHealth(Controller controller)
     {
         // 체력바로 표시하기
     }
 
-    void InvalidBlock(Player player)
+    void InvalidBlock(ClientPlayer player)
     {
 
     }
